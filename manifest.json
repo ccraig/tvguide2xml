@@ -1,0 +1,21 @@
+{
+  "name": "tvguid2xml",
+  "manifest_version": 2,
+  "version": "1.0",
+
+  "description": "Converts the TV Guide listings page ( http://www.tvguide.com/Listings/ ) to XML. Exports to console.",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.tvguide.com/Listings/"],
+
+      "js": [
+        "js/libs/jquery-2.1.1.min.js",
+        "js/contentscript.js"
+      ],
+
+      "run_at": "document_end"
+    }
+  ]
+
+}
